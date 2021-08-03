@@ -1,3 +1,4 @@
+// eslint.workingDirectories is subject to change
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
