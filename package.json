@@ -10,7 +10,8 @@
     "test:coverage": "jest --coverage",
     "prettier": "prettier --write",
     "lint": "ng lint",
-    "lint-fix": "ng lint --fix"
+    "lint-fix": "ng lint --fix",
+    "build:ios": "ng build ionic-base --prod && npx cap sync ios && npx cap open ios"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,14 @@
     "@angular/platform-browser": "12.1.2",
     "@angular/platform-browser-dynamic": "12.1.2",
     "@angular/router": "12.1.2",
+    "@capacitor/app": "1.0.2",
+    "@capacitor/core": "3.1.2",
+    "@capacitor/cli": "3.1.2",
+    "@capacitor/haptics": "1.0.2",
+    "@capacitor/ios": "3.1.2",
+    "@capacitor/keyboard": "1.0.2",
+    "@capacitor/status-bar": "1.0.2",
+    "@ionic/angular": "^5.6.12",
     "rxjs": "6.6.0",
     "tslib": "2.2.0",
     "zone.js": "0.11.4"
@@ -35,6 +44,7 @@
     "@angular-eslint/template-parser": "12.3.1",
     "@angular/cli": "12.1.2",
     "@angular/compiler-cli": "12.1.2",
+    "@ionic/angular-toolkit": "latest",
     "@ngneat/spectator": "8.0.1",
     "@types/jest": "26.0.24",
     "@types/node": "12.11.1",

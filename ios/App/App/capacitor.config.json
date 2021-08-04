@@ -1,0 +1,6 @@
+{
+	"appId": "com.ionic.base",
+	"appName": "Ionic Base",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
