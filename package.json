@@ -11,7 +11,10 @@
     "prettier": "prettier --write",
     "lint": "ng lint",
     "lint-fix": "ng lint --fix",
-    "build:ios": "ng build ionic-base --prod && npx cap sync ios && npx cap open ios"
+    "build:ios": "ng build ionic-base --prod && npx cap sync ios && npx cap open ios",
+    "e2e": "ng e2e",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "private": true,
   "dependencies": {
@@ -24,8 +27,8 @@
     "@angular/platform-browser-dynamic": "12.1.2",
     "@angular/router": "12.1.2",
     "@capacitor/app": "1.0.2",
-    "@capacitor/core": "3.1.2",
     "@capacitor/cli": "3.1.2",
+    "@capacitor/core": "3.1.2",
     "@capacitor/haptics": "1.0.2",
     "@capacitor/ios": "3.1.2",
     "@capacitor/keyboard": "1.0.2",
@@ -44,6 +47,7 @@
     "@angular-eslint/template-parser": "12.3.1",
     "@angular/cli": "12.1.2",
     "@angular/compiler-cli": "12.1.2",
+    "@cypress/schematic": "1.5.0",
     "@ionic/angular-toolkit": "latest",
     "@ngneat/spectator": "8.0.1",
     "@types/jest": "26.0.24",
@@ -64,7 +68,8 @@
     "jest-preset-angular": "9.0.4",
     "lint-staged": "11.1.1",
     "prettier": "2.3.2",
-    "typescript": "4.3.2"
+    "typescript": "4.3.2",
+    "cypress": "8.2.0"
   },
   "lint-staged": {
     "*.ts": [
