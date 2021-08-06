@@ -3,8 +3,9 @@ module.exports = {
   // testRunner: 'jasmine2',
   // transformIgnorePatters: ['<rootDir>/node_modules/(?!library_name)'],
   transform: {
-    "^.+\\.(ts|html)$": "jest-preset-angular",
-    "^.+\\.js$": "babel-jest"
+    '^.+\\.(ts|html)$': 'jest-preset-angular',
+    '^.+\\.js$': 'babel-jest'
   },
-  setupFilesAfterEnv: ['<rootDir>/setupJest.ts']
-}
+  setupFilesAfterEnv: ['<rootDir>/setupJest.ts'],
+  testPathIgnorePatterns: ['<rootDir>/cypress/']
+};
